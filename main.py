@@ -1,5 +1,4 @@
 import time
-
 class BankAccount:
     def __init__(self, name, acc_no):
         self.name = name
@@ -7,9 +6,9 @@ class BankAccount:
         self.balance = 0
         self.history = []
 
-    def deposit(self, amount):
+def deposit(self, amount):
         if amount <= 0:
-            print("Invalid amount!")
+            print("invalid amt")
             return
         self.balance += amount
         self.history.append(f"Deposited: ₹{amount}")
