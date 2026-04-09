@@ -6,11 +6,11 @@ class BankAccount:
         self.acc_no = acc_no
         self.balance = 0
         self.history = []
-        self.transactions = []   # used for ML-like analysis
+        self.transactions = []   # ml
 
     def deposit(self, amount):
         if amount <= 0:
-            print("Please enter a valid amount.")
+            print("Please enter a valid amt.")
             return
         self.balance += amount
         self.history.append(f"Deposited ₹{amount}")
